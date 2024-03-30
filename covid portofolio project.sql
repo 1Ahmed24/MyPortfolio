@@ -49,7 +49,7 @@ where continent is not null
 Group by continent
 order by totaldeathcount desc
 
---showing global cases and death ans the deathpercentage
+--showing global cases and death and the deathpercentage
 
 
 select sum(new_cases)globalcases, sum(cast(new_deaths as int ))as globaldeaths, sum(cast(new_deaths as int))/sum(new_cases)*100 as deathspercentage
